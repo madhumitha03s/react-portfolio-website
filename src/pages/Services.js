@@ -48,14 +48,22 @@ const Services = () => {
       <div className="wrapper">
         {servicesList.map((item) => {
           return (
-            <div>
-              <Card>
+            <motion.div
+              key={item.id}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.5 },
+              }}
+            >
+              <Card className="card">
                 <Card.Img variant="top" src={item.imageUrl} />
                 <Card.Body>
-                  <Card.Title> {item.name} </Card.Title>
+                  <Card.Title className="card-title">
+                    <a href="picture">{item.name}</a>
+                  </Card.Title>
                 </Card.Body>
               </Card>
-            </div>
+            </motion.div>
           );
         })}
       </div>

@@ -46,12 +46,17 @@ const Contact = () => {
         </Col>
         <Col>
           <div className="contact-data">
-            <p>Email me on madhumitha.s2020b@vitstudent.ac.in</p>
             <p>
-              I can help designing websites or application interfaces, creating
-              websites from scratch or enhancing existing work, building
-              websites in webflow, or designing a custom icon set for your
-              buisness.
+              Email me on{" "}
+              <a href="mailto:madhumitha.s2020b@vitstudent.ac.in">
+                madhumitha.s2020b@vitstudent.ac.in
+              </a>
+            </p>
+            <p>
+              I can help in designing websites or application interfaces,
+              creating websites from scratch or enhancing existing work,
+              building websites in webflow, or designing a custom icon set for
+              your buisness.
             </p>
             <p>
               Currently based in Chennai, India - available for remote-friendly

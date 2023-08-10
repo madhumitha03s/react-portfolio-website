@@ -3,31 +3,50 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* navbar style */
 .navbar-light .navbar-nav .nav-link,
 .list-group-item a {
-  color: #aaa;
+  color: #FFF;
 }
+
 .navbar {
   padding: 25px;
 }
+
 a {
   text-decoration: none;
 }
 
 a:hover,
 a:active {
-  color: #fafafa !important;
+  color: #00FFFF !important;
 }
+
 .navbar-light .navbar-brand,
 .navbar-light .navbar-brand:hover {
-  color: #fff;
+  color: #00FFFF;
   font-weight: 700;
   font-size: 1.5rem;
 }
+
+.navbar-toggler {
+  background-color: #ffffff;
+}
+
+.fixed-top {
+  background-color: rgb(14, 21, 22);
+}
+
+/* body style */
 body {
   background: #0e1516;
   color: #aaa;
   font-size: 1.25rem;
+}
+
+h2 {
+  color: moccasin;
 }
 
 /*
@@ -114,10 +133,8 @@ li {
   align-items: center;
   cursor: pointer;
 } */
-.fixed-top {
-  background-color: #0e1516;
-}
 
+/* home page style */
 .home {
   /* background-color: #210811; */
   display: flex;
@@ -136,9 +153,10 @@ li {
 
 .home font,
 .project font {
-  color: rgb(222, 176, 76);
+  color: #9400D3;
 }
 
+/* pages style */
 .projects,
 .services,
 .about,
@@ -148,6 +166,25 @@ li {
   color: #fff;
 }
 
+/* card style */
+.projects .card {
+  background-color: rgba(0, 255, 255, 0.8);
+}
+
+.services .card {
+  background-color: rgba(148, 0, 211, 0.5);
+}
+
+/* .card .card-title a:hover {
+  color: #9400D3;
+} */
+
+.card .card-title,
+.card .card-title a {
+  color: #fafafa;
+}
+
+/* about page */
 .about {
   font-size: 1.5rem;
   width: 58%;
@@ -155,55 +192,7 @@ li {
   text-align: center;
 }
 
-.contact {
-  width: 100%;
-  text-align: left;
-  margin: 100px auto 0;
-}
-
-.contact h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.contact-data {
-  border-left: 1px solid #dfdfdf;
-  padding-left: 40px;
-  display: block;
-}
-.content {
-  display: flex;
-  align-items: center;
-}
-.content p {
-  text-align: justify;
-}
-
-.projects .wrapper,
-.services .wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0 20px 0;
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.card {
-  background-color: transparent;
-}
-
-.services {
-  /* background-color: #421023;
-  height: 93vh; */
-}
-.about {
-  /* background-color: #52142c;
-  height: 93vh; */
-}
-.contact {
-  /* background-color: #631834;
-  height: 93vh; */
-}
+/* progress bar in about page */
 .progress-bar-animate {
   position: fixed;
   top: 0;
@@ -214,6 +203,82 @@ li {
   transform-origin: 0%;
   z-index: 1050;
 }
+
+/* contact page */
+.contact {
+  width: 100%;
+  text-align: left;
+  margin: 100px auto 0;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: moccasin;
+}
+
+.contact-form Button {
+  color: #000000;
+  background-color: #00FFFF;
+  border: 1px solid #9400D3;
+}
+
+.contact-form Button:hover {  
+  background-color: #0e1516;
+  border: 1px solid #00FFFF;
+}
+
+.contact-data {
+  border-left: 1px solid #dfdfdf;
+  padding-left: 40px;
+  display: block;
+}
+
+.contact-data a {
+  color: #9400D3;
+}
+
+/* list group in contact page */
+.list-group-item {
+  background-color: #00FFFF;
+  color: #000000;  
+}
+
+.list-group-item a {
+  color: #000000;  
+}
+
+.list-group-item:hover {
+  background-color: #0e1516;
+  border: 1px solid #fafafa;
+}
+
+.list-group-item a:hover,
+.list-group-item:hover a {
+  color: #00FFFF;
+}
+
+/* .content {
+  display: flex;
+  align-items: center;
+}
+
+.content p {
+  text-align: justify;
+} */
+
+/* wrapper class */
+.projects .wrapper,
+.services .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* media queries */
 @media (max-width: 1000px) {
   .home {
     font-size: 3.5rem;
@@ -252,20 +317,4 @@ li {
     font-size: 3.5rem;
     margin-bottom: 30px;
   }
-}
-
-.list-group-item a {
-  color: #000;
-}
-
-.list-group-item:hover {
-  background-color: #0e1516;
-  border: 1px solid #fafafa;
-}
-.list-group-item a:hover,
-.list-group-item:hover a {
-  color: #fafafa;
-}
-.navbar-toggler {
-  background-color: #ffffff;
 }
