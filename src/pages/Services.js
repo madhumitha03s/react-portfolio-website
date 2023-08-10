@@ -1,5 +1,6 @@
 import React from "react";
-import Card from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import { motion } from "framer-motion";
 import project from "../images/project.jpg";
 
 const Services = () => {
@@ -9,9 +10,40 @@ const Services = () => {
       name: "Support",
       imageUrl: project,
     },
+    {
+      id: 2,
+      name: "Support",
+      imageUrl: project,
+    },
+    {
+      id: 3,
+      name: "Support",
+      imageUrl: project,
+    },
+    {
+      id: 4,
+      name: "Support",
+      imageUrl: project,
+    },
+    {
+      id: 5,
+      name: "Support",
+      imageUrl: project,
+    },
+    {
+      id: 6,
+      name: "Support",
+      imageUrl: project,
+    },
   ];
   return (
-    <div className="services">
+    <motion.div
+      className="services"
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ scaleY: 0 }}
+      transition={{ duration: 0.2 }}
+    >
       <h2>Services</h2>
       <div className="wrapper">
         {servicesList.map((item) => {
@@ -27,7 +59,7 @@ const Services = () => {
           );
         })}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

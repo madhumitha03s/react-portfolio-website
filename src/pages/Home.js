@@ -8,13 +8,19 @@ const Home = () => {
         className="name"
         initial={{ x: -300, scale: 0.5 }}
         animate={{ x: 0, scale: 1 }}
+        transition={{ duration: 1 }}
       >
         Madhumitha <font>Sivagnanam</font>
       </motion.div>
-      <div className="desc">
-        <font>FullStack Developer</font> and <font>Student</font> based in
+      <motion.div
+        className="desc"
+        initial={{ x: 300, scale: 0.5 }}
+        animate={{ x: 0, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <font>Web Developer</font> and <font>UI/UX Designer</font> based in
         Chennai
-      </div>
+      </motion.div>
     </div>
   );
 };
