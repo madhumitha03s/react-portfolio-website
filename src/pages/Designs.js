@@ -1,53 +1,52 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import project from "../images/project.jpg";
 
-const Projects = () => {
-  const ProjectList = [
+const Designs = () => {
+  const designsList = [
     {
       id: 1,
-      name: "FeedBuzz - Movie Recommendation System",
+      name: "Support",
       imageUrl: project,
     },
     {
       id: 2,
-      name: "Facial Identification based Music Recommendation System",
+      name: "Support",
       imageUrl: project,
     },
     {
       id: 3,
-      name: "Online Organ Donation Management System",
+      name: "Support",
       imageUrl: project,
     },
     {
       id: 4,
-      name: "Smart Health Monitoring System in IoT",
+      name: "Support",
       imageUrl: project,
     },
     {
       id: 5,
-      name: "FIAS - Facial Identification based Attendance System",
+      name: "Support",
       imageUrl: project,
     },
     {
       id: 6,
-      name: "Faunaphil - Animal Welfare App Ideation",
+      name: "Support",
       imageUrl: project,
     },
   ];
   return (
     <motion.div
-      className="projects"
-      animate={{ scale: [2, 1], rotate: [90, 0] }}
-      transition={{
-        duration: 0.5,
-        ease: easeInOut,
-      }}
+      className="designs"
+      initial={{ scaleY: 0 }}
+      animate={{ scaleY: 1 }}
+      exit={{ scaleY: 0 }}
+      transition={{ duration: 0.2 }}
     >
-      <h2>Projects</h2>
+      <h2>Designs</h2>
       <div className="wrapper">
-        {ProjectList.map((item) => {
+        {designsList.map((item) => {
           return (
             <motion.div
               key={item.id}
@@ -59,7 +58,9 @@ const Projects = () => {
               <Card className="card">
                 <Card.Img variant="top" src={item.imageUrl} />
                 <Card.Body>
-                  <Card.Title className="card-title">{item.name}</Card.Title>
+                  <Card.Title className="card-title">
+                    <a href="picture">{item.name}</a>
+                  </Card.Title>
                 </Card.Body>
               </Card>
             </motion.div>
@@ -70,4 +71,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Designs;

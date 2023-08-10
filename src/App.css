@@ -158,7 +158,7 @@ li {
 
 /* pages style */
 .projects,
-.services,
+.designs,
 .about,
 .contact {
   margin-top: 100px;
@@ -171,7 +171,7 @@ li {
   background-color: rgba(0, 255, 255, 0.8);
 }
 
-.services .card {
+.designs .card {
   background-color: rgba(148, 0, 211, 0.5);
 }
 
@@ -199,7 +199,7 @@ li {
   left: 0;
   right: 0;
   height: 10px;
-  background: #fafafa;
+  background: #9400D3;
   transform-origin: 0%;
   z-index: 1050;
 }
@@ -269,7 +269,7 @@ li {
 
 /* wrapper class */
 .projects .wrapper,
-.services .wrapper {
+.designs .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0 20px 0;
@@ -284,7 +284,7 @@ li {
     font-size: 3.5rem;
   }
   .home .name {
-    font-size: 5.5rem;
+    font-size: 5rem;
     margin-bottom: 30px;
   }
 }
@@ -297,10 +297,10 @@ li {
     border-top: 1px solid #fafafa;
   }
   .home {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .home .name {
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin-bottom: 30px;
   }
 }
@@ -314,7 +314,7 @@ li {
     font-size: 2.5rem;
   }
   .home .name {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 30px;
   }
 }
